@@ -1,0 +1,13 @@
+.homepage__app h2, h5 {
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: bold !important;
+}
+
+.homepage__app .h5 {
+    width: 60ch;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}

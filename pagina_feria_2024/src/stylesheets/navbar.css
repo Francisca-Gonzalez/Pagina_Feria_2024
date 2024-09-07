@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #0061a2 !important;
+}
+
+.navbar__button {
+    color: white !important;
+    text-transform: none !important;
+    margin-left: 25px !important;
+    font-size: 16px !important;
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: bold !important;
+}
+
+.navbar__button--dark {
+    color: black !important;
+    text-transform: none !important;
+    margin-left: 20px !important;
+    font-size: 16px !important;
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: bold !important;
+}
+
+.navbar__img {
+    width: 2.9rem;
+}
