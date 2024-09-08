@@ -1,0 +1,16 @@
+.footer {
+    background-color: #0061a2 !important;
+}
+
+.footer__text {
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: bold !important;
+}
+
+.footer__text h6 {
+    font-size: 32px !important;
+}
+
+.footer__text body2 {
+    font-size: 15px !important;
+}

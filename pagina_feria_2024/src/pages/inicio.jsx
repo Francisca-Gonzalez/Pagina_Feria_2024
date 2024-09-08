@@ -4,7 +4,8 @@ import '../stylesheets/inicio.css';
 
 export default function Inicio() {
     return (
-        <Container maxWidth="lg" className="homepage" sx={{ mt: 10 }}>
+        <>
+        <Container maxWidth="xl" className="homepage" sx={{ mt: 10 }}>
             <Box className="homepage__video" sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
                 {/* YouTube Video */}
                 <Box
@@ -15,7 +16,7 @@ export default function Inicio() {
                     allowFullScreen
                     sx={{
                         width: { xs: '100%', md: '80%' }, // Responsive size
-                        height: { xs: '200px', md: '280px' }, // Adjust height accordingly
+                        height: { xs: '200px', md: '300px' }, // Adjust height accordingly
                         border: 'none',
                         mt: 4
                     }}
@@ -30,43 +31,40 @@ export default function Inicio() {
                 </Typography>
                 </Box>
             </Box>
+        </Container>
 
+        <Container maxWidth="xl" className="homepage__grid">
         {/* Beneficios */}
-            <Grid container spacing={4} sx={{ textAlign: 'center', my: 4 }}>
-                <Grid item xs={6} md={3}>
-                    <Typography variant="h6" gutterBottom>
-                        Evaluación Personalizada
+            <Grid container sx={{ display: 'flex', justifyContent: 'space-evenly', textAlign: 'center', mt: 8, mb: 4 }}>
+                <Grid className="homepage__griditem" item xs={6} md={3}>
+                    <Typography className="homepage__text" variant="h6" gutterBottom>
+                        Tests Personalizados
                     </Typography>
-                    <Typography>Realiza evaluaciones adaptadas a tu nivel y habilidades.</Typography>
+                    <Typography className="homepage__text">Realiza evaluaciones adaptadas a tu nivel y habilidades.</Typography>
                 </Grid>
-                <Grid item xs={6} md={3}>
-                    <Typography variant="h6" gutterBottom>
+                <Grid className="homepage__griditem" item xs={6} md={3}>
+                    <Typography className="homepage__text" variant="h6" gutterBottom>
                         Actividades Prácticas
                     </Typography>
-                    <Typography>Pruebas reales que simulan situaciones cotidianas.</Typography>
+                    <Typography className="homepage__text">Pruebas reales que simulan situaciones cotidianas.</Typography>
                 </Grid>
-                <Grid item xs={6} md={3}>
-                    <Typography variant="h6" gutterBottom>
+                <Grid className="homepage__griditem" item xs={6} md={3}>
+                    <Typography className="homepage__text" variant="h6" gutterBottom>
                         Basado en DigComp 2.2
                     </Typography>
-                    <Typography>Desarrolla competencias clave según estándares europeos.</Typography>
+                    <Typography className="homepage__text">Desarrolla competencias clave según estándares europeos.</Typography>
                 </Grid>
-                <Grid item xs={6} md={3}>
-                    <Typography variant="h6" gutterBottom>
+                <Grid className="homepage__griditem" item xs={6} md={3}>
+                    <Typography className="homepage__text" variant="h6" gutterBottom>
                     IA Generativa
                     </Typography>
-                    <Typography>
-                    Genera preguntas personalizadas y analiza respuestas con IA avanzada para una evaluación más precisa.
+                    <Typography className="homepage__text">
+                    Genera preguntas y analiza respuestas con IA avanzada.
                     </Typography>
                 </Grid>
             </Grid>
-            
-            <Box sx={{ textAlign: 'center', py: 2, borderTop: '1px solid #e0e0e0', fontFamily: "Quicksand, sans serif" }}>
-                <Typography variant="body2" color="textSecondary">
-                © 2024 Digital Skill App. Todos los derechos reservados.
-                </Typography>
-            </Box>
         </Container>
+        </>
     );
 };
 

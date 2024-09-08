@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/navbar.jsx';
 import Inicio from './pages/inicio.jsx';
+import Footer from './components/footer.jsx';
 
 // function App() {
 //   return (
@@ -36,6 +37,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Inicio />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
