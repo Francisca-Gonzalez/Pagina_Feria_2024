@@ -1,4 +1,4 @@
-import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider, Router} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/navbar.jsx';
 import Inicio from './pages/inicio.jsx';
@@ -32,9 +32,10 @@ import Inicio from './pages/inicio.jsx';
 export default function App() {
   return (
     <Router basename="/Pagina_Feria_2024">
-      <Route path="/" element={<Navbar/>}>
-        <Route index element={<Inicio />} />
-      </Route>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+      </Routes>
     </Router>
   );
 }
