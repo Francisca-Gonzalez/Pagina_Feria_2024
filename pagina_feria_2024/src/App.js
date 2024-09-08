@@ -1,4 +1,4 @@
-import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
+import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider, Router} from 'react-router-dom';
 import './App.css';
 import Navbar from './components/navbar.jsx';
 import Inicio from './pages/inicio.jsx';
@@ -29,17 +29,12 @@ import Inicio from './pages/inicio.jsx';
 
 // export default App;
 
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Navbar/>}>
-      <Route index element={<Inicio />} />
-    </Route>
-  )
-)
-
 export default function App() {
   return (
-    <RouterProvider router={router}/>
+    <Router basename="/Pagina_Feria_2024">
+      <Route path="/" element={<Navbar/>}>
+        <Route index element={<Inicio />} />
+      </Route>
+    </Router>
   );
 }
