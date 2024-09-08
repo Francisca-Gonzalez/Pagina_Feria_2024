@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/pagina_feria_2024/static/css/main.795ab3b3.css",
-    "main.js": "/pagina_feria_2024/static/js/main.92f4eaef.js",
-    "static/media/Logo.svg": "/pagina_feria_2024/static/media/Logo.3ad24bca43f8db026e36c4bc44046281.svg",
-    "index.html": "/pagina_feria_2024/index.html",
-    "main.795ab3b3.css.map": "/pagina_feria_2024/static/css/main.795ab3b3.css.map",
-    "main.92f4eaef.js.map": "/pagina_feria_2024/static/js/main.92f4eaef.js.map"
+    "main.css": "/Pagina_Feria_2024/static/css/main.795ab3b3.css",
+    "main.js": "/Pagina_Feria_2024/static/js/main.e652f1a7.js",
+    "static/media/Logo.svg": "/Pagina_Feria_2024/static/media/Logo.3ad24bca43f8db026e36c4bc44046281.svg",
+    "index.html": "/Pagina_Feria_2024/index.html",
+    "main.795ab3b3.css.map": "/Pagina_Feria_2024/static/css/main.795ab3b3.css.map",
+    "main.e652f1a7.js.map": "/Pagina_Feria_2024/static/js/main.e652f1a7.js.map"
   },
   "entrypoints": [
     "static/css/main.795ab3b3.css",
-    "static/js/main.92f4eaef.js"
+    "static/js/main.e652f1a7.js"
   ]
 }
