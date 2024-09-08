@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Pagina_Feria_2024/static/css/main.795ab3b3.css",
-    "main.js": "/Pagina_Feria_2024/static/js/main.3d28d851.js",
+    "main.css": "/Pagina_Feria_2024/static/css/main.ee701fe2.css",
+    "main.js": "/Pagina_Feria_2024/static/js/main.bda29acb.js",
     "static/media/Logo.svg": "/Pagina_Feria_2024/static/media/Logo.3ad24bca43f8db026e36c4bc44046281.svg",
     "index.html": "/Pagina_Feria_2024/index.html",
-    "main.795ab3b3.css.map": "/Pagina_Feria_2024/static/css/main.795ab3b3.css.map",
-    "main.3d28d851.js.map": "/Pagina_Feria_2024/static/js/main.3d28d851.js.map"
+    "main.ee701fe2.css.map": "/Pagina_Feria_2024/static/css/main.ee701fe2.css.map",
+    "main.bda29acb.js.map": "/Pagina_Feria_2024/static/js/main.bda29acb.js.map"
   },
   "entrypoints": [
-    "static/css/main.795ab3b3.css",
-    "static/js/main.3d28d851.js"
+    "static/css/main.ee701fe2.css",
+    "static/js/main.bda29acb.js"
   ]
 }
