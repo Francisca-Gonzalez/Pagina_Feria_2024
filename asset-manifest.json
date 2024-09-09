@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/Pagina_Feria_2024/static/css/main.ee701fe2.css",
-    "main.js": "/Pagina_Feria_2024/static/js/main.bda29acb.js",
-    "static/media/Logo.svg": "/Pagina_Feria_2024/static/media/Logo.3ad24bca43f8db026e36c4bc44046281.svg",
+    "main.css": "/Pagina_Feria_2024/static/css/main.d1f2d182.css",
+    "main.js": "/Pagina_Feria_2024/static/js/main.4e2ccfcc.js",
+    "static/media/member-4.jfif": "/Pagina_Feria_2024/static/media/member-4.10fe778504876179b9c7.jfif",
+    "static/media/member-3.jfif": "/Pagina_Feria_2024/static/media/member-3.fc15fff4b9c2d2c360fd.jfif",
+    "static/media/member-6.jfif": "/Pagina_Feria_2024/static/media/member-6.8e2f1e32d13df27c4b24.jfif",
+    "static/media/member-2.jfif": "/Pagina_Feria_2024/static/media/member-2.30921762aba36a3fe4e9.jfif",
+    "static/media/member-1.jfif": "/Pagina_Feria_2024/static/media/member-1.e73bcf5a4031345b02ca.jfif",
+    "static/media/member-5.jfif": "/Pagina_Feria_2024/static/media/member-5.a504a3416a52e86937e8.jfif",
+    "static/media/Logo.svg": "/Pagina_Feria_2024/static/media/Logo.75b26dcdc7c731fec730a0210a4ec72f.svg",
     "index.html": "/Pagina_Feria_2024/index.html",
-    "main.ee701fe2.css.map": "/Pagina_Feria_2024/static/css/main.ee701fe2.css.map",
-    "main.bda29acb.js.map": "/Pagina_Feria_2024/static/js/main.bda29acb.js.map"
+    "main.d1f2d182.css.map": "/Pagina_Feria_2024/static/css/main.d1f2d182.css.map",
+    "main.4e2ccfcc.js.map": "/Pagina_Feria_2024/static/js/main.4e2ccfcc.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee701fe2.css",
-    "static/js/main.bda29acb.js"
+    "static/css/main.d1f2d182.css",
+    "static/js/main.4e2ccfcc.js"
   ]
 }
