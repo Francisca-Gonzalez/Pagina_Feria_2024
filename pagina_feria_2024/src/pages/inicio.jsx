@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Typography, Box, Grid } from '@mui/material';
 import '../stylesheets/inicio.css';
+import logo from '../assets/Logo.svg';
 
 export default function Inicio() {
     return (
@@ -17,15 +18,15 @@ export default function Inicio() {
                     sx={{
                         width: { xs: '100%', md: '80%' }, // Responsive size
                         height: { xs: '200px', md: '300px' }, // Adjust height accordingly
-                        border: 'none',
-                        mt: 4
+                        border: 'none'
                     }}
                 />
                 {/* Content next to the video */}
                 <Box className="homepage__app">
-                <Typography variant="h2" gutterBottom sx={{ color: 'black', mt: 2 }}>
+                <Typography variant="h2" gutterBottom>
                     Digital Skill App
                 </Typography>
+                <img alt="logo" className="homepage__img" src={logo}/>
                 <Typography variant="h5" gutterBottom sx={{ color: 'black' }}>
                     Una aplicación web para evaluar las competencias digitales de los ciudadanos de manera práctica y real.
                 </Typography>
@@ -35,12 +36,12 @@ export default function Inicio() {
 
         <Container maxWidth="xl" className="homepage__grid">
         {/* Beneficios */}
-            <Grid container sx={{ display: 'flex', justifyContent: 'space-evenly', textAlign: 'center', mt: 8, mb: 4 }}>
+            <Grid container sx={{ display: 'flex', justifyContent: 'space-evenly', textAlign: 'center', mt: 5 }}>
                 <Grid className="homepage__griditem" item xs={6} md={3}>
                     <Typography className="homepage__text" variant="h6" gutterBottom>
-                        Tests Personalizados
+                        Pruebas Personalizados
                     </Typography>
-                    <Typography className="homepage__text">Realiza evaluaciones adaptadas a tu nivel y habilidades.</Typography>
+                    <Typography className="homepage__text">Realiza pruebas adaptadas a tu nivel y habilidades.</Typography>
                 </Grid>
                 <Grid className="homepage__griditem" item xs={6} md={3}>
                     <Typography className="homepage__text" variant="h6" gutterBottom>

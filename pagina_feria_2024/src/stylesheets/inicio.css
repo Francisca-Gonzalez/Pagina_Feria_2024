@@ -17,6 +17,7 @@
 .homepage__app h2, h5 {
     font-family: 'Quicksand', sans-serif !important;
     color: #0061a2 !important;
+    margin: 0;
 }
 
 .homepage__app h2 {
@@ -52,10 +53,14 @@
     display: flex !important;
     flex-direction: column !important;
     align-items: center;
-    justify-content: space-between;
-    max-width: 220px !important;
+    justify-content: space-evenly;
+    max-width: 270px !important;
 }
 
 .homepage__griditem h6 {
     font-weight: bold !important;
+}
+
+.homepage__img {
+    width: 130px;
 }

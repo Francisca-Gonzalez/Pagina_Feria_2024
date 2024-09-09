@@ -88,7 +88,10 @@ export default function Navbar() {
                             to={link}  
                             key={page} 
                             onClick={handleCloseNavMenu}
-                            sx={{ my: 2, color: 'white', display: 'block' }}
+                            sx={{ my: 2, color: 'white', display: 'block', borderRadius: '0px', '&.active': { 
+                                borderBottom: '2px solid white' // Estilo para el botón activo
+                                } 
+                            }}
                             >
                             {page}
                             </Button>

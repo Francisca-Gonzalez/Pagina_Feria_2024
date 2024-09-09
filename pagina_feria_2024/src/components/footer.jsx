@@ -42,10 +42,7 @@ export default function Footer() {
                     Síguenos
                     </Typography>
                     <Link className="footer__text" variant="body2" href="https://facebook.com" color="inherit" underline="none" sx={{ display: 'block', mb: 1 }}>
-                    Facebook
-                    </Link>
-                    <Link className="footer__text" variant="body2" href="https://twitter.com" color="inherit" underline="none" sx={{ display: 'block', mb: 1 }}>
-                    Twitter
+                    Instagram
                     </Link>
                     <Link className="footer__text" variant="body2" href="https://linkedin.com" color="inherit" underline="none" sx={{ display: 'block' }}>
                     LinkedIn
@@ -54,8 +51,8 @@ export default function Footer() {
             </Grid>
 
             {/* Derechos Reservados */}
-            <Box mt={3}>
-            <Typography className="footer__text" variant="body2" align="center">
+            <Box mt={3} className="footer__rights">
+            <Typography className="footer__text" variant="h8" align="center">
                 &copy; {new Date().getFullYear()} Digital Skill App. Todos los derechos reservados.
             </Typography>
             </Box>
