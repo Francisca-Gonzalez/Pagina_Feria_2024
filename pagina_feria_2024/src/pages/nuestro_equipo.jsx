@@ -51,7 +51,7 @@ export default function NuestroEquipo() {
                     <Card sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                         <img alt="logo" className="team__img" src={m2}/>
                         <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'start'}}>
-                            <Typography className="team__text--bold">Valentina Cisterna</Typography>
+                            <Typography className="team__text--bold">Valentina Cisternas</Typography>
                             <Typography className="team__text">Fullstack Developer</Typography>
                             <a href="https://www.linkedin.com/in/valentina-cisternas-ocaranza-186573303/">Linkedin</a>
                         </Box>
