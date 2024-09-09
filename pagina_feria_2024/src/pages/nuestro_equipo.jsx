@@ -9,7 +9,7 @@ import m4 from '../assets/members/member-4.jfif';
 import m5 from '../assets/members/member-5.jfif';
 import m6 from '../assets/members/member-6.jfif';
 
-export default function Inicio() {
+export default function NuestroEquipo() {
     return (
         <>
         <Container maxWidth="xl" sx={{ mt: 10 }}>
