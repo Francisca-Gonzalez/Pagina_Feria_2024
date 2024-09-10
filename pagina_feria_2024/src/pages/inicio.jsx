@@ -11,7 +11,7 @@ export default function Inicio() {
                 {/* YouTube Video */}
                 <Box
                     component="iframe"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&autoplay=1&rel=0"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&autoplay=0&rel=0"
                     title="YouTube video"
                     allow="autoplay; encrypted-media"
                     allowFullScreen
