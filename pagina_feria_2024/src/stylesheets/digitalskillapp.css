@@ -1,0 +1,21 @@
+.appweb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 80%;
+}
+
+.appweb h2 {
+    font-family: 'Quicksand', sans-serif !important;
+    color: #0061a2 !important;
+    font-weight: bold !important;
+    font-size: 50px !important;
+}
+
+.appweb__problem h2 {
+    font-family: 'Quicksand', sans-serif !important;
+    color: #0061a2 !important;
+    font-weight: bold !important;
+    font-size: 50px !important;
+}
