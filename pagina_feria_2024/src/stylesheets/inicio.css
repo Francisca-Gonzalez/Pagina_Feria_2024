@@ -5,7 +5,7 @@
 }
 
 .homepage__app {
-    margin-left: 8vw;
+    margin-left: 10vw;
     width: 70ch;
     display: flex;
     flex-direction: column;
@@ -14,9 +14,13 @@
     height: 300px;
 }
 
+.homepage__mockup {
+    width: 350px;
+}
+
 .homepage__app h2, h5 {
     font-family: 'Quicksand', sans-serif !important;
-    color: #0061a2 !important;
+    color: #023056 !important;
     margin: 0;
 }
 
@@ -27,9 +31,11 @@
 }
 
 .homepage__app h5 {
-    font-size: 23px !important;
+    font-size: 20px !important;
     text-align: justify;
 }
+
+
 
 .homepage__grid {
     padding: 4vh 30vh 0 30vh;
@@ -42,7 +48,16 @@
 
 .homepage__text {
     font-family: 'Quicksand', sans-serif !important;
-    color: #0061a2 !important;
+    color: #023056 !important;
+    font-size: 20px !important;
+}
+
+.video__text {
+    font-family: 'Quicksand', sans-serif !important;
+    color: #023056 !important;
+    font-size: 50px !important;
+    font-weight: bold !important;
+    text-align: center;
 }
 
 .homepage__griditem {

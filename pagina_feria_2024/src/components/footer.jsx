@@ -6,7 +6,7 @@ import '../stylesheets/footer.css';
 
 export default function Footer() {
   return (
-    <Box className="footer" position="relative" sx={{ bgcolor: 'primary.main', color: 'white', py: 3, mt: 5, width: '100%' }}>
+    <Box className="footer" position="relative" sx={{ bgcolor: 'primary.main', color: 'white', py: 3, mt: 7, width: '100%' }}>
         <Container maxWidth="xl" >
             <Grid2 container spacing={4}>
                 {/* Información Básica */}
@@ -37,10 +37,10 @@ export default function Footer() {
                 <Grid2 item xs={12} sm={3}>
                     <Typography className="footer__text" variant="h6" gutterBottom>Síguenos</Typography>
                     <IconButton aria-label="fingerprint" href='https://www.instagram.com/digitalskillapp/'>
-                        <InstagramIcon />
+                        <InstagramIcon sx={{color: 'white'}}/>
                     </IconButton>
                     <IconButton aria-label="fingerprint" href='https://www.linkedin.com/'>
-                        <LinkedInIcon />
+                        <LinkedInIcon sx={{color: 'white'}} />
                     </IconButton>
                 </Grid2>
             </Grid2>

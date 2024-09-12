@@ -26,77 +26,72 @@ export default function Navbar() {
     return (
         <>
             <AppBar className="navbar" position="fixed">
-                <Container maxWidth="xl">
-                    <Toolbar disableGutters>
-                    {/* Logo */}
-                    <NavLink to="/"><img alt="logo" className="navbar__img" src={logo}/></NavLink>
-                    {/* <Typography
-                        variant="h6"
-                        noWrap
-                        component="div"
-                        sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-                    >
-                        Logo
-                    </Typography> */}
+                <Container maxWidth="xl" >
+                    <Toolbar disableGutters className="navbar__toolbar">
+                        <Box className="navbar__logo" sx={{}}>
+                            <NavLink to="/"><img alt="logo" className="navbar__img" src={logo}/></NavLink>
+                            <Typography variant='h2'>DigitalSkillApp</Typography>
+                        </Box>
+                    
 
                     {/* Menu Icon (Mobile) */}
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                        <IconButton
-                        size="large"
-                        aria-label="menu"
-                        aria-controls="menu-appbar"
-                        aria-haspopup="true"
-                        onClick={handleOpenNavMenu}
-                        color="inherit"
-                        >
-                        <MenuIcon />
-                        </IconButton>
-                        <Menu
-                        id="menu-appbar"
-                        anchorEl={anchorElNav}
-                        anchorOrigin={{
-                            vertical: 'bottom',
-                            horizontal: 'left',
-                        }}
-                        keepMounted
-                        transformOrigin={{
-                            vertical: 'top',
-                            horizontal: 'left',
-                        }}
-                        open={Boolean(anchorElNav)}
-                        onClose={handleCloseNavMenu}
-                        sx={{
-                            display: { xs: 'block', md: 'none' },
-                        }}
-                        >
-                        {pages.map(({page , link}) => (
-                            <MenuItem key={page} component={NavLink} to={link} onClick={handleCloseNavMenu}>
-                            <Typography textAlign="center">{page}</Typography>
-                            </MenuItem>
-                        ))}
-                        </Menu>
-                    </Box>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                            <IconButton
+                            size="large"
+                            aria-label="menu"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleOpenNavMenu}
+                            color="inherit"
+                            >
+                            <MenuIcon />
+                            </IconButton>
+                            <Menu
+                            id="menu-appbar"
+                            anchorEl={anchorElNav}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'left',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'left',
+                            }}
+                            open={Boolean(anchorElNav)}
+                            onClose={handleCloseNavMenu}
+                            sx={{
+                                display: { xs: 'block', md: 'none' },
+                            }}
+                            >
+                            {pages.map(({page , link}) => (
+                                <MenuItem key={page} component={NavLink} to={link} onClick={handleCloseNavMenu}>
+                                <Typography textAlign="center">{page}</Typography>
+                                </MenuItem>
+                            ))}
+                            </Menu>
+                        </Box>
 
                     {/* Logo for Mobile */}
 
                     {/* Menu for Desktop */}
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map(({ page, link }) => (
-                            <Button 
-                            className="navbar__button"
-                            component={NavLink}
-                            to={link}  
-                            key={page} 
-                            onClick={handleCloseNavMenu}
-                            sx={{ my: 2, color: 'white', display: 'block', borderRadius: '0px', '&.active': { 
-                                borderBottom: '2px solid white' // Estilo para el botón activo
-                                } 
-                            }}
-                            >
-                            {page}
-                            </Button>
-                        ))}
-                    </Box>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
+                            {pages.map(({ page, link }) => (
+                                <Button 
+                                className="navbar__button"
+                                component={NavLink}
+                                to={link}  
+                                key={page} 
+                                onClick={handleCloseNavMenu}
+                                sx={{ my: 2, color: 'white', display: 'block', borderRadius: '0px', '&.active': { 
+                                    borderBottom: '2px solid white' // Estilo para el botón activo
+                                    } 
+                                }}
+                                >
+                                {page}
+                                </Button>
+                            ))}
+                        </Box>
                     </Toolbar>
                 </Container>
             </AppBar>

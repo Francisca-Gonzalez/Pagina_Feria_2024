@@ -1,12 +1,25 @@
 .navbar {
-    background-color: #0061a2 !important;
+    background-color: #023056 !important;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo h2 {
+    color: white !important;
+    text-transform: none !important;
+    font-size: 20px !important;
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: bold !important;
 }
 
 .navbar__button {
     color: white !important;
     text-transform: none !important;
     margin-left: 25px !important;
-    font-size: 16px !important;
+    font-size: 20px !important;
     font-family: 'Quicksand', sans-serif !important;
     font-weight: bold !important;
 }
