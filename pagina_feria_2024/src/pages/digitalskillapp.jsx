@@ -15,9 +15,7 @@ export default function Inicio() {
                 
             <Box align="center" className="appweb__problem" >
                 <Typography variant="h2" gutterBottom>¿Qué hace DigitalSkillApp?</Typography>
-                <Typography variant="h5" gutterBottom>
-                    Algo creo.
-                </Typography>
+                <Typography variant="h5" gutterBottom>Algo creo.</Typography>
             </Box>
             
         </Container>        

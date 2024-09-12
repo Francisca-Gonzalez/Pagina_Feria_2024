@@ -12,11 +12,7 @@
 }
 
 .team__company--logo {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 40px !important;
+    height: 130px;
 }
 
 .team__element {
@@ -57,7 +53,6 @@
     font-size: 40px !important;
 }
 
-.team__img {
-    width: 130px;
+.css-1fy9j49-MuiStack-root>:not(style)~:not(style) {
+    margin-top: 0!important;
 }
-
