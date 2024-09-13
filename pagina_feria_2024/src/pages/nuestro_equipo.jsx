@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography,Paper, IconButton, Stack, Container,Grid2, Divider, Avatar } from '@mui/material';
+import { Typography, Paper, IconButton, Stack, Grid2, Divider, Avatar } from '@mui/material';
 import '../stylesheets/nuestro_equipo.css';
 import logo from '../assets/Logo2.svg';
 import m1 from '../assets/members/member-1.jfif';
@@ -12,30 +12,33 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function NuestroEquipo() {
     return (
-        <Stack direction='row'>
-            <Container>
-                <Stack className="team" sx={{ mb: 3 }} direction='column' spacing={4}>
-                    <Typography className="team__title--logo">StormCat</Typography>
-                    <Stack direction='row'>
-                        <img alt="logo" className="team__company--logo" src={logo} />
+        <Grid2 container direction='row' justifyContent='center' spacing={2}>
+            <Grid2 container direction='column' size={4}>
+                <Typography className="team__title--logo" align='center' gutterBottom>StormCat</Typography>
+                <Grid2 container direction='column' spacing={8}>
+                    <Grid2 container direction='row' spacing={8}>
+                        <img alt="logo" className="team__company--logo" src={logo}/>
                         <Typography className="team__text">Te ayudamos a resolver tus problemas tecnológicos.</Typography>
+                    </Grid2>
+                    <Stack divider={<Divider flexItem />} spacing={5}>
+                        <Stack direction='row' sx={{justifyContent:'space-between'}}>
+                            <Typography className="team__title" variant='h4'>Valores</Typography>
+                            <Typography className="team__text" variant='body1'>Compromiso - Innovación - Perseverancia</Typography>
+                        </Stack>
+                        <Stack direction='row-reverse' sx={{justifyContent:'space-between'}}>
+                            <Typography className="team__title" variant='h4'>Misión</Typography>
+                            <Typography className="team__text" variant='body1'>Entregar soluciones tecnológicas efectivas a los ciudadanos.</Typography>
+                        </Stack>
+                        <Stack direction='row' sx={{justifyContent:'space-between'}}>
+                            <Typography className="team__title" variant='h4'>Visión</Typography>
+                            <Typography className="team__text" variant='body1'>Ser la empresa líder en soluciones tecnológicas para la ciudadanía.</Typography>
+                        </Stack>
                     </Stack>
-                    <Stack >
-                        <Typography className="team__title" align='left'>Valores</Typography>
-                        <Typography className="team__text" variant='body1'>Compromiso - Innovación - Perseverancia</Typography>
-                        <Divider />
-                        <Typography className="team__title" align='rigth'>Misión</Typography>
-                        <Typography className="team__text" variant='body1'>Entregar soluciones tecnológicas efectivas a los ciudadanos.</Typography>
-                        <Divider />
-                        <Typography className="team__title">Visión</Typography>
-                        <Typography className="team__text" variant='body1'>Ser la empresa líder en soluciones tecnológicas para la ciudadanía.</Typography>
-                        <Divider />
-                    </Stack>
-                </Stack>
-            </Container>
-            <Container>
-                <Typography className="team__title--logo" gutterBottom align='center'>Nuestro Equipo</Typography>
-                <Grid2 container spacing={{ xs: 6, md: 7 }} columns={{ xs: 3, sm: 7, md: 15 }}>
+                </Grid2>
+            </Grid2>
+            <Grid2 direction='column' sx={{ alignItems: 'center', maxWidth: '80vh'}}>
+                <Typography className="team__title--logo" align='center' gutterBottom>Nuestro Equipo</Typography>
+                <Grid2 container spacing={{ xs: 3, md: 4 }} sx={{ justifyContent: 'center' }}>
                     {[{ name: 'Sebastián Baeza', role: 'Product Owner', img: m1, linkedin: 'https://www.linkedin.com/in/sebastian-baeza-avello/' },
                     { name: 'Valentina Cisternas', role: 'Fullstack Developer', img: m2, linkedin: 'https://www.linkedin.com/in/valentina-cisternas-ocaranza-186573303/' },
                     { name: 'Alonso Herrera', role: 'Scrum Master', img: m3, linkedin: 'https://www.linkedin.com/in/alonso-herrerao/' },
@@ -43,17 +46,16 @@ export default function NuestroEquipo() {
                     { name: 'Nicolás Pizarro', role: 'Fullstack Developer', img: m5, linkedin: 'https://www.linkedin.com/in/nicolas-pizarro-talamilla-367179300/' },
                     { name: 'Daniela Sánchez', role: 'Fullstack Developer', img: m6, linkedin: 'https://www.linkedin.com/in/daniela-s%C3%A1nchez-nizza-a00453263/' }
                     ].map((member, index) => (
-                        <Grid2 item key={index} size={{ xs: 2, sm: 4, md: 4 }}>
-                            <Paper component={Stack} direction='column'  sx={{alignItems: 'center',padding:'1vh'}}>
-                                <Avatar alt={member.name} sx={{width:'130px',height:'130px'}}src={member.img} />
-                                <Typography className="team__text--bold" align='center'>{member.name}</Typography>
-                                <Typography className="team__text" align='center'>{member.role}</Typography>
-                                <IconButton href={member.linkedin}><LinkedInIcon /></IconButton>
-                            </Paper>
-                        </Grid2>
+                        <Paper component={Grid2} key={index} container direction='column' sx={{ padding: '1vh', alignItems: 'center' }}>
+                            <Avatar alt={member.name} sx={{ width: '15vh', height: '15vh', marginBottom: '1vh' }} src={member.img} />
+                            <Typography className="team__text--bold" align='center' >{member.name}</Typography>
+                            <Typography className="team__text" align='center' >{member.role}</Typography>
+                            <IconButton href={member.linkedin} size="small"><LinkedInIcon fontSize="small" /></IconButton>
+                        </Paper>
                     ))}
                 </Grid2>
-            </Container>
-        </Stack>
+            </Grid2>
+
+        </Grid2>
     );
 };

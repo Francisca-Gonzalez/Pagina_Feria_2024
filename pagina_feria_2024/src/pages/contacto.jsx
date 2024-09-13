@@ -5,7 +5,7 @@ import '../stylesheets/contacto.css';
 
 export default function Contacto () {
     return (
-    <Grid2 container direction='row' spacing={5} sx={{}}>
+    <Grid2 container direction='row' spacing={5} sx={{justifyContent:'center'}}>
         <Grid2 container spacing={5} direction="column">
             <Grid2 container spacing={3} alignItems="center">
                 <Grid2>

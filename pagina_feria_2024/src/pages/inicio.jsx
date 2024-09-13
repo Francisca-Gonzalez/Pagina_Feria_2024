@@ -43,7 +43,7 @@ export default function Inicio() {
             </Grid2>
 
             <Grid2 container sx={{display: 'flex', justifyContent: 'space-evenly', mt: 7}}>
-                <Grid2 xs={6} md={6}>
+                <Grid2 container xs={6} md={6} sx={{flexWrap:'wrap',alignContent:'center'}}>
                     <Typography className="video__text" variant="h2" gutterBottom>¡Conoce más sobre DigitalSkillApp!</Typography>
                 </Grid2>
                 <Grid2 xs={6} md={6}>
