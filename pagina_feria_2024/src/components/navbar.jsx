@@ -60,9 +60,7 @@ export default function Navbar() {
                             }}
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
-                            sx={{
-                                display: { xs: 'block', md: 'none' },
-                            }}
+                            sx={{display: { xs: 'block', md: 'none' },}}
                             >
                             {pages.map(({page , link}) => (
                                 <MenuItem key={page} component={NavLink} to={link} onClick={handleCloseNavMenu}>
@@ -88,7 +86,7 @@ export default function Navbar() {
                                     } 
                                 }}
                                 >
-                                {page}
+                                    {page}
                                 </Button>
                             ))}
                         </Box>

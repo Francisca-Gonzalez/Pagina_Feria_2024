@@ -5,7 +5,6 @@
 }
 
 .homepage__app {
-    margin-left: 10vw;
     width: 70ch;
     display: flex;
     flex-direction: column;
@@ -34,8 +33,6 @@
     font-size: 20px !important;
     text-align: justify;
 }
-
-
 
 .homepage__grid {
     padding: 4vh 30vh 0 30vh;
