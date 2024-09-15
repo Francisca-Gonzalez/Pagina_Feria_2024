@@ -10,13 +10,13 @@
     font-weight: bold !important;
     color: white !important;
 }
-a:-webkit-any-link {
+/* a:-webkit-any-link {
     font-family: 'Quicksand', sans-serif !important;
-    text-decoration: none;
-    color: white ;
+    text-decoration: none !important;
+    color: white !important;
     margin-bottom: 1vh;
     font-weight: bold;
-}
+} */
 
 .footer__text h6 {
     font-size: 32px !important;
