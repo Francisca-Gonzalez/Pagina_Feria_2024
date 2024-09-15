@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
-body {
+body{
   margin: 95px 0 0 0;
+}
+
+body .MuiTypography-root {
   font-family: 'Quicksand', sans-serif !important;
+  color: #023056;
+}
+body .MuiTypography-h1, .MuiTypography-h2, .MuiTypography-h3, .MuiTypography-h4, .MuiTypography-h5, .MuiTypography-h6 {
+  font-weight: bold !important;
+}
+body .MuiTypography-h1 {
+  font-size: 40px !important;
+}
+body .MuiTypography-h6 {
+  font-size: 20px !important;
 }

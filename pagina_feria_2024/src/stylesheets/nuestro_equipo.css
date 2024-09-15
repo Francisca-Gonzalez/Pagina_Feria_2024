@@ -22,34 +22,18 @@
 }
 
 .team__text {
-    font-family: 'Quicksand', sans-serif !important;
     color: #0061a2 !important;
     font-size: 20px;
     align-content: center;
 }
 
 .team__text--bold {
-    font-family: 'Quicksand', sans-serif !important;
-    color: #0061a2 !important;
     font-size: 20px;
-    font-weight: bold !important;
 }
 
 .team__title {
-    font-family: 'Quicksand', sans-serif !important;
-    font-weight: bold !important;
-    color: #0061a2 !important;
     text-align: center;
-    width: 5vw;
-    margin-right: 2vw;
     font-size: 20px;
-}
-
-.team__title--logo {
-    font-family: 'Quicksand', sans-serif !important;
-    font-weight: bold !important;
-    color: #0061a2 !important;
-    font-size: 40px !important;
 }
 
 .css-1fy9j49-MuiStack-root>:not(style)~:not(style) {

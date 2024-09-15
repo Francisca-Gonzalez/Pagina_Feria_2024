@@ -1,21 +1,25 @@
 .footer {
     background-color: #023056 !important;
+    width: '100%';
+    margin-top: 5vh;
+    padding: 3vh;
+    color: white !important;
 }
 
 .footer__text {
     font-weight: bold !important;
+    color: white !important;
 }
 a:-webkit-any-link {
+    font-family: 'Quicksand', sans-serif !important;
     text-decoration: none;
     color: white ;
+    margin-bottom: 1vh;
+    font-weight: bold;
 }
 
 .footer__text h6 {
     font-size: 32px !important;
-}
-
-.footer__text body2 {
-    font-size: 15px !important;
 }
 
 .footer__rights {

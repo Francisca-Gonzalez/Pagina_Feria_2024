@@ -4,6 +4,10 @@
     justify-content: space-evenly;
 }
 
+.MuiTypography-root {
+    color: #023056 !important;
+}
+
 .homepage__app {
     width: 70ch;
     display: flex;
@@ -18,7 +22,6 @@
 }
 
 .homepage__app h2, h5 {
-    font-family: 'Quicksand', sans-serif !important;
     color: #023056 !important;
     margin: 0;
 }
@@ -35,44 +38,35 @@
 }
 
 .homepage__grid {
-    padding: 4vh 30vh 0 30vh;
-    justify-content: center !important;
+    padding: 1vh;
     display: flex !important;
     align-items: center;
-    justify-content: space-between !important;
+    justify-content: space-evenly !important;
     text-align: center !important;
 }
 
 .homepage__text {
-    font-family: 'Quicksand', sans-serif !important;
-    color: #023056 !important;
-    font-size: 20px !important;
+    font-size: 15px !important;
 }
 
 .video__text {
-    font-family: 'Quicksand', sans-serif !important;
-    color: #023056 !important;
     font-size: 50px !important;
     font-weight: bold !important;
     text-align: center;
 }
 
 .homepage__griditem {
+    display: flex !important;
     border-radius: 1vh;
-    padding: 14px !important;
+    padding: 1vh !important;
     border: 1px #cccbcb70 solid;
     background-color: white;
     text-align: center;
     height: 200px !important;
-    display: flex !important;
+    justify-content: center !important;
     flex-direction: column !important;
     align-items: center;
-    justify-content: space-evenly;
-    max-width: 270px !important;
-}
-
-.homepage__griditem h6 {
-    font-weight: bold !important;
+    max-width: 25vh !important;
 }
 
 .homepage__img {
