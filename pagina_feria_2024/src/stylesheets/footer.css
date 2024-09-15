@@ -10,7 +10,7 @@
     font-weight: bold !important;
     color: white !important;
 }
-a:-webkit-any-link {
+a:-webkit-any-link a{
     font-family: 'Quicksand', sans-serif !important;
     text-decoration: none;
     color: white ;
