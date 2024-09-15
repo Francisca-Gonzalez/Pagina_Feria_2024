@@ -13,12 +13,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default function NuestroEquipo() {
     return (
         <Grid2 container direction='row' justifyContent='center' spacing={2}>
-            <Grid2 container direction='column' size={4}>
+            <Grid2 container md={6} direction='column' size={4}>
                 <Typography variant='h1' className="team__title--logo" align='center' gutterBottom>StormCat</Typography>
                 <Grid2 container direction='column' spacing={8}>
                     <Grid2 container direction='row' spacing={8}>
-                        <img alt="logo" className="team__company--logo" src={logo}/>
-                        <Typography className="team__text" >Te ayudamos a resolver tus problemas tecnológicos.</Typography>
+                        <img alt="logo" className="team__company--logo" Style="display: block; margin-left: auto; margin-right: auto" src={logo}/>
+                        {/* <Typography className="team__text" align="center">Te ayudamos a resolver tus problemas tecnológicos.</Typography> */}
                     </Grid2>
                     <Paper component={Stack} divider={<Divider/>} spacing={2} sx={{padding:'2vh'}}>
                         <Stack direction='row' sx={{justifyContent:'space-between', alignItems: 'center'}}>
@@ -32,17 +32,28 @@ export default function NuestroEquipo() {
                     </Paper>
                 </Grid2>
             </Grid2>
-            <Grid2 direction='column' sx={{ alignItems: 'center', maxWidth: '80vh'}}>
+            <Grid2 direction='column' md={6} sx={{ alignItems: 'center', maxWidth: '80vh'}}>
                 <Typography variant='h1' className="team__title--logo" align='center' gutterBottom>Nuestro Equipo</Typography>
-                <Grid2 container spacing={{ xs: 3, md: 4 }} sx={{ justifyContent: 'center' }}>
+                <Grid2 container spacing={{ xs: 3, md: 2 }} sx={{ justifyContent: 'center' }}>
                     {[{ name: 'Sebastián Baeza', role: 'Product Owner', img: m1, linkedin: 'https://www.linkedin.com/in/sebastian-baeza-avello/' },
-                    { name: 'Valentina Cisternas', role: 'Encargado de Marketing', img: m2, linkedin: 'https://www.linkedin.com/in/valentina-cisternas-ocaranza-186573303/' },
+                    { name: 'Valentina Cisternas', role: 'Marketing', img: m2, linkedin: 'https://www.linkedin.com/in/valentina-cisternas-ocaranza-186573303/' },
                     { name: 'Alonso Herrera', role: 'Scrum Master', img: m3, linkedin: 'https://www.linkedin.com/in/alonso-herrerao/' },
-                    { name: 'Francisca González', role: 'Encargado de UX', img: m4, linkedin: 'https://www.linkedin.com/in/francisca-gonzalez-bastias/' },
+                ].map((member, index) => (
+                    <Paper component={Grid2} key={index} md={4} container direction='column' sx={{ padding: '1vh', alignItems: 'center', minWidth: '25vh' }}>
+                            <Avatar className='memberImg' alt={member.name} sx={{ width: '15vh', height: '15vh', marginBottom: '1vh' }} src={member.img} />
+                            <Typography className="team__text--bold" align='center' >{member.name}</Typography>
+                            <Typography className="team__text" align='center' >{member.role}</Typography>
+                            <IconButton href={member.linkedin} size="small"><LinkedInIcon sx={{color:'gray'}}/></IconButton>
+                        </Paper>
+                    ))}
+                </Grid2>
+                <Grid2 container spacing={{ xs: 3, md: 2 }} sx={{ justifyContent: 'center' }}>
+                    {[
+                    { name: 'Francisca González', role: 'Encargada de UX', img: m4, linkedin: 'https://www.linkedin.com/in/francisca-gonzalez-bastias/' },
                     { name: 'Nicolás Pizarro', role: 'Senior Developer', img: m5, linkedin: 'https://www.linkedin.com/in/nicolas-pizarro-talamilla-367179300/' },
-                    { name: 'Daniela Sánchez', role: 'Encargado de QA', img: m6, linkedin: 'https://www.linkedin.com/in/daniela-s%C3%A1nchez-nizza-a00453263/' }
-                    ].map((member, index) => (
-                        <Paper component={Grid2} key={index} container direction='column' sx={{ padding: '1vh', alignItems: 'center' }}>
+                    { name: 'Daniela Sánchez', role: 'Encargada de QA', img: m6, linkedin: 'https://www.linkedin.com/in/daniela-s%C3%A1nchez-nizza-a00453263/' }
+                ].map((member, index) => (
+                    <Paper component={Grid2} key={index} md={4} container direction='column' sx={{ padding: '1vh', alignItems: 'center' }}>
                             <Avatar className='memberImg' alt={member.name} sx={{ width: '15vh', height: '15vh', marginBottom: '1vh' }} src={member.img} />
                             <Typography className="team__text--bold" align='center' >{member.name}</Typography>
                             <Typography className="team__text" align='center' >{member.role}</Typography>

@@ -67,8 +67,8 @@ export default function Navbar() {
                             sx={{display: { xs: 'block', md: 'none' },}}
                             >
                             {pages.map(({page , link}) => (
-                                <MenuItem key={page} component={NavLink} to={link} onClick={handleCloseNavMenu}>
-                                <Typography textAlign="center">{page}</Typography>
+                                <MenuItem key={page} component={NavLink} to={link} onClick={handleCloseNavMenu} sx={{fontFamily: 'Quicksand, sans-serif'}}>
+                                <Typography textAlign="center" sx={{fontFamily: 'Quicksand, sans-serif'}}>{page}</Typography>
                                 </MenuItem>
                             ))}
                             </Menu>
@@ -111,10 +111,10 @@ export default function Navbar() {
                     <Grid2>
                         <Typography component={Grid2} className="footer__text" variant="h6" gutterBottom> Navegación</Typography>
                         <Grid2 component={Stack} direction='column' >
-                            <Link to="/">Inicio</Link>
-                            <Link to="/DigitalSkillApp">¿Qué es Digital Skill App?</Link>
-                            <Link to="/NuestroEquipo">Nuestro Equipo</Link>
-                            <Link to="/Contacto">Contacto</Link>
+                            <Link to="/" Style="font-family: 'Quicksand', sans-serif !important;text-decoration: none;color: white;margin-bottom: 1vh;font-weight: bold;">Inicio</Link>
+                            <Link to="/DigitalSkillApp" Style="font-family: 'Quicksand', sans-serif !important;text-decoration: none;color: white;margin-bottom: 1vh;font-weight: bold;">¿Qué es Digital Skill App?</Link>
+                            <Link to="/NuestroEquipo" Style="font-family: 'Quicksand', sans-serif !important;text-decoration: none;color: white;margin-bottom: 1vh;font-weight: bold;">Nuestro Equipo</Link>
+                            <Link to="/Contacto" Style="font-family: 'Quicksand', sans-serif !important;text-decoration: none;color: white;margin-bottom: 1vh;font-weight: bold;">Contacto</Link>
                         </Grid2>
                     </Grid2>
 

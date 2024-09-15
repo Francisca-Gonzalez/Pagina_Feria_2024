@@ -24,19 +24,7 @@ export default function Inicio() {
                 <Grid2 component={Typography} className="homepage__title" xs={6} md={6} sx={{flexWrap:'wrap',alignContent:'center'}}>
                     ¡Conoce más sobre DigitalSkillApp!
                 </Grid2>
-                <Grid2
-                    component="iframe"
-                    src="https://www.youtube-nocookie.com/embed/nJ-MHl6REz4?si=ImNBsQrRpt1MAMUz"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                    sx={{
-                        width: { xs: '75%', md: '35vw' }, // Responsive size
-                        height: { xs: '31vh', md: '41vh' }, // Adjust height accordingly
-                        border: 'none'
-                    }}
-                />
+                <Grid2 component='iframe' src="https://www.youtube.com/embed/wkP0cm6TdrA?si=VM7eu-2JMsui7_3n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen sx={{width: {xs: '75%', md: '35vw'}, height: {xs: '31vh', md: '41vh'}, border: 'none'}}/>
             </Grid2>
         </>
     );
