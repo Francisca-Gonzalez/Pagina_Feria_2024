@@ -67,7 +67,7 @@
 // };
 
 import React from 'react';
-import { Typography, Paper, IconButton, Stack, Grid, Divider, Avatar } from '@mui/material';
+import { Typography, Paper, IconButton, Stack, Box, Divider, Avatar, Container } from '@mui/material';
 import '../stylesheets/nuestro_equipo.css';
 import logo from '../assets/Logo2.png';
 import m1 from '../assets/members/1.png';
@@ -80,64 +80,146 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function NuestroEquipo() {
     return (
-        <Grid container direction="row" spacing={2} sx={{ height: '100vh' }}>
-            {/* Lado Izquierdo - Empresa */}
-            <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                <Typography variant="h1" className="team__title--logo" align="center" gutterBottom>StormCat</Typography>
-                <img alt="logo" className="team__company--logo" style={{ display: 'block', maxWidth: '200px', marginBottom: '20px' }} src={logo} />
-                
-                <Paper component={Stack} divider={<Divider />} spacing={2} sx={{ padding: '2vh', width: '80%' }}>
-                    <Stack direction="row" sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                        <Typography className="team__title" variant="h4" padding="2vh" align="center">Misión</Typography>
-                        <Typography className="team__text" variant="body1" padding="2vh" align="justify" sx={{ width: '80%' }}>
-                            Brindar a la ciudadanía chilena un medio para demostrar su capacidad de manejarse en el mundo digital.
-                        </Typography>
-                    </Stack>
-                    <Stack direction="row-reverse" sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-                        <Typography className="team__title" variant="h4" padding="2vh" align="center">Visión</Typography>
-                        <Typography className="team__text" variant="body1" padding="2vh" align="justify" sx={{ width: '80%' }}>
-                            Contribuir y fomentar la creación de una sociedad inclusiva y tecnológicamente avanzada, siendo un referente en la certificación de competencias digitales en la ciudadanía.
-                        </Typography>
-                    </Stack>
-                </Paper>
-            </Grid>
+        <Container
+            maxWidth="lg"
+            sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                minHeight: '100vh', // Footer siempre visible
+                justifyContent: 'space-between',
+                paddingBottom: '5vh',
+            }}
+        >
+            <Box
+                display="flex"
+                flexDirection={{ xs: 'column', md: 'row' }}
+                p={2}
+                sx={{ flexGrow: 1 }}
+            >
+                {/* Lado Izquierdo - Empresa */}
+                <Box
+                    flex={1}
+                    display="flex"
+                    flexDirection="column"
+                    justifyContent="center"
+                    alignItems="center"
+                    p={2}
+                >
+                    <Typography variant="h1" className="team__title--logo" align="center" gutterBottom>
+                        StormCat
+                    </Typography>
+                    <img
+                        alt="logo"
+                        className="team__company--logo"
+                        style={{ display: 'block', maxWidth: '200px', marginBottom: '20px' }}
+                        src={logo}
+                    />
 
-            {/* Lado Derecho - Miembros del equipo */}
-            <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <Typography variant="h1" className="team__title--logo" align="center" gutterBottom>Nuestro Equipo</Typography>
-                
-                {/* Contenedor de los miembros del equipo */}
-                <Grid container spacing={3} justifyContent="center">
-                    {[
-                        { name: 'Sebastián Baeza', role: 'Product Owner', img: m1, linkedin: 'https://www.linkedin.com/in/sebastian-baeza-avello/' },
-                        { name: 'Valentina Cisternas', role: 'Marketing', img: m2, linkedin: 'https://www.linkedin.com/in/valentina-cisternas-ocaranza-186573303/' },
-                        { name: 'Alonso Herrera', role: 'Scrum Master', img: m3, linkedin: 'https://www.linkedin.com/in/alonso-herrerao/' },
-                        { name: 'Nicolás Pizarro', role: 'Senior Developer', img: m5, linkedin: 'https://www.linkedin.com/in/nicolas-pizarro-talamilla-367179300/' },
-                        { name: 'Francisca González', role: 'Encargada de UX', img: m4, linkedin: 'https://www.linkedin.com/in/francisca-gonzalez-bastias/' },
-                        { name: 'Daniela Sánchez', role: 'Encargada de QA', img: m6, linkedin: 'https://www.linkedin.com/in/daniela-s%C3%A1nchez-nizza-a00453263/' }
-                    ].map((member, index) => (
-                        <Grid item xs={12} sm={6} md={4} key={index} sx={{ display: 'flex', justifyContent: 'center' }}>
-                            <Paper sx={{ 
-                                padding: '2vh', 
-                                textAlign: 'center', 
-                                display: 'flex', 
-                                flexDirection: 'column', 
-                                alignItems: 'center', 
-                                justifyContent: 'center', 
-                                minHeight: '30vh'  // Asegura altura uniforme
-                            }}>
-                                <Avatar className='memberImg' alt={member.name} sx={{ width: '15vh', height: '15vh', marginBottom: '1vh' }} src={member.img} />
+                    <Paper
+                        component={Stack}
+                        divider={<Divider />}
+                        spacing={2}
+                        sx={{ padding: '2vh', width: { xs: '90%', md: '80%' } }}
+                    >
+                        <Stack direction="row" sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                            <Typography className="team__title" variant="h4" padding="2vh" align="center">
+                                Misión
+                            </Typography>
+                            <Typography
+                                className="team__text"
+                                variant="body1"
+                                padding="2vh"
+                                align="justify"
+                                sx={{ width: '80%' }}
+                            >
+                                Brindar a la ciudadanía chilena un medio para demostrar su capacidad de manejarse en el mundo
+                                digital.
+                            </Typography>
+                        </Stack>
+                        <Stack direction="row-reverse" sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+                            <Typography className="team__title" variant="h4" padding="2vh" align="center">
+                                Visión
+                            </Typography>
+                            <Typography
+                                className="team__text"
+                                variant="body1"
+                                padding="2vh"
+                                align="justify"
+                                sx={{ width: '80%' }}
+                            >
+                                Contribuir y fomentar la creación de una sociedad inclusiva y tecnológicamente avanzada, siendo
+                                un referente en la certificación de competencias digitales en la ciudadanía.
+                            </Typography>
+                        </Stack>
+                    </Paper>
+                </Box>
+
+                {/* Lado Derecho - Miembros del equipo */}
+                <Box
+                    flex={1}
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    p={2}
+                    sx={{ width: '100%' }}
+                >
+                    <Typography variant="h1" className="team__title--logo" align="center" gutterBottom>
+                        Nuestro Equipo
+                    </Typography>
+
+                    {/* Contenedor de los miembros del equipo */}
+                    <Box
+                        display="grid"
+                        gridTemplateColumns={{ xs: '1fr', sm: '1fr 1fr', md: 'repeat(3, 1fr)' }} // 3 columnas en pantallas grandes
+                        gap={4}
+                        sx={{
+                            alignItems: 'center',
+                            justifyItems: 'center',
+                            width: '100%',
+                        }}
+                    >
+                        {[
+                            { name: 'Sebastián Baeza', role: 'Product Owner', img: m1, linkedin: 'https://www.linkedin.com/in/sebastian-baeza-avello/' },
+                            { name: 'Valentina Cisternas', role: 'Marketing', img: m2, linkedin: 'https://www.linkedin.com/in/valentina-cisternas-ocaranza-186573303/' },
+                            { name: 'Alonso Herrera', role: 'Scrum Master', img: m3, linkedin: 'https://www.linkedin.com/in/alonso-herrerao/' },
+                            { name: 'Francisca González', role: 'Encargada de UX', img: m4, linkedin: 'https://www.linkedin.com/in/francisca-gonzalez-bastias/' },
+                            { name: 'Nicolás Pizarro', role: 'Senior Developer', img: m5, linkedin: 'https://www.linkedin.com/in/nicolas-pizarro-talamilla-367179300/' },
+                            { name: 'Daniela Sánchez', role: 'Encargada de QA', img: m6, linkedin: 'https://www.linkedin.com/in/daniela-s%C3%A1nchez-nizza-a00453263/' }
+                        ].map((member, index) => (
+                            <Paper
+                                key={index}
+                                sx={{
+                                    padding: '2vh',
+                                    textAlign: 'center',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    height: '100%',
+                                    maxWidth: '250px',
+                                }}
+                            >
+                                <Avatar alt={member.name} sx={{ width: '15vh', height: '15vh', marginBottom: '1vh' }} src={member.img} />
                                 <Typography className="team__text--bold">{member.name}</Typography>
                                 <Typography className="team__text">{member.role}</Typography>
                                 <IconButton href={member.linkedin} size="small">
                                     <LinkedInIcon sx={{ color: 'gray' }} />
                                 </IconButton>
                             </Paper>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Grid>
-        </Grid>
+                        ))}
+                    </Box>
+                </Box>
+            </Box>
+{/* 
+
+            <Box component="footer" sx={{ textAlign: 'center', marginTop: 'auto', padding: '2vh', backgroundColor: '#f8f9fa' }}>
+                <Typography variant="body2">
+                    © 2024 StormCat. Todos los derechos reservados.
+                </Typography>
+            </Box> */}
+        </Container>
     );
 }
+
+
 
