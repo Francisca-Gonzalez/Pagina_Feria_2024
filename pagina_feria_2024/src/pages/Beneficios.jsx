@@ -9,7 +9,7 @@ const Beneficios = () => {
         </Grid2>
         <Grid2 className="homepage__griditem" xs={1} md={3}>
             <Typography className="homepage__text" variant="h6" gutterBottom>Actividades Prácticas</Typography>
-            <Typography className="homepage__text">Pruebas reales que simulan situaciones cotidianas.</Typography>
+            <Typography className="homepage__text">Simulaciones reales que ponen tus habilidades digitales a prueba</Typography>
         </Grid2>
         <Grid2 className="homepage__griditem" xs={1} md={3}>
             <Typography className="homepage__text" variant="h6" gutterBottom>Basado en DigComp 2.2</Typography>
@@ -21,11 +21,11 @@ const Beneficios = () => {
         </Grid2>
         <Grid2 className="homepage__griditem" xs={1} md={3}>
             <Typography className="homepage__text" variant="h6" gutterBottom>Secuencia y medición del tiempo</Typography>
-            <Typography className="homepage__text">...</Typography>
+            <Typography className="homepage__text">Mide tu rendimiento mientras avanzas en pruebas secuenciales.</Typography>
         </Grid2>
         <Grid2 className="homepage__griditem" xs={1} md={3}>
             <Typography className="homepage__text" variant="h6" gutterBottom>Feedback completo</Typography>
-            <Typography className="homepage__text">...</Typography>
+            <Typography className="homepage__text">Resultados detallados para evaluar tus competencias digitales al instante.</Typography>
         </Grid2>
     </Grid2>
     );
