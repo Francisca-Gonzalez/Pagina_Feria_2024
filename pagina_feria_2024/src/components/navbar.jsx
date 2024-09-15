@@ -4,8 +4,10 @@ import { AppBar, Toolbar, Typography, Button, Container, MenuItem, Menu, Box, Ic
 import MenuIcon from '@mui/icons-material/Menu';
 import '../stylesheets/navbar.css';
 import logo from '../assets/Logo.svg';
+import fsw from '../assets/logo-fesw-300x161.png';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YoutubeIcon from '@mui/icons-material/YouTube';
 import '../stylesheets/footer.css';
 export default function Navbar() {
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -102,6 +104,7 @@ export default function Navbar() {
                     <Grid2 xs={12} sm={6}>
                         <Typography className="footer__text" variant="h6" gutterBottom>Digital Skill App</Typography>
                         <Typography className="footer__text" variant="body2">Evaluamos tus competencias digitales según el marco europeo DigComp 2.2.</Typography>
+                        <img alt="fsw" Style="width: 150px; margin-top: 15px; display: block; margin-left: auto; margin-right: auto;" src={fsw}/>
                     </Grid2>
 
                     {/* Enlaces de Navegación */}
@@ -117,12 +120,15 @@ export default function Navbar() {
 
                     {/* Enlaces de Redes Sociales */}
                     <Grid2 xs={12} sm={3}>
-                        <Typography className="footer__text" variant="h6" gutterBottom>Síguenos</Typography>
+                        <Typography className="footer__text" variant="h6" sx={{ml: 1}} gutterBottom>Síguenos</Typography>
                         <IconButton aria-label="fingerprint" href='https://www.instagram.com/digitalskillapp/'>
                             <InstagramIcon sx={{color: 'white'}}/>
                         </IconButton>
-                        <IconButton aria-label="fingerprint" href='https://www.linkedin.com/'>
+                        <IconButton aria-label="fingerprint" href='https://www.linkedin.com/company/stormcat/'>
                             <LinkedInIcon sx={{color: 'white'}} />
+                        </IconButton>
+                        <IconButton aria-label="fingerprint" href='https://www.youtube.com/@Stormcat-fsw'>
+                            <YoutubeIcon sx={{color: 'white'}} />
                         </IconButton>
                     </Grid2>
                 </Grid2>
