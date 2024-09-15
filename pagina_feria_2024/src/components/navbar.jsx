@@ -67,8 +67,8 @@ export default function Navbar() {
                             sx={{display: { xs: 'block', md: 'none' },}}
                             >
                             {pages.map(({page , link}) => (
-                                <MenuItem key={page} component={NavLink} to={link} onClick={handleCloseNavMenu} sx={{fontFamily: 'Quicksand, sans-serif'}}>
-                                <Typography textAlign="center" sx={{fontFamily: 'Quicksand, sans-serif'}}>{page}</Typography>
+                                <MenuItem key={page} component={NavLink} to={link} onClick={handleCloseNavMenu}>
+                                    <Typography textAlign="center" sx={{fontFamily: 'Quicksand,sans-serif'}}>{page}</Typography>
                                 </MenuItem>
                             ))}
                             </Menu>

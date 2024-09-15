@@ -2,16 +2,12 @@
     background-color: #023056 !important;
 }
 
-.navbar__logo {
-    display: flex;
-    align-items: center;
-}
-
 .navbar__logo h2 {
     color: white !important;
     text-transform: none !important;
     font-size: 20px !important;
     font-weight: bold !important;
+    font-family: "Quicksand", sans-serif;
 }
 
 .navbar__button {
@@ -19,15 +15,19 @@
     text-transform: none !important;
     margin-left: 25px !important;
     font-size: 20px !important;
-    font-weight: bold !important;
+    font-family: "Quicksand", sans-serif !important;
 }
 
+.css-d2kz13{
+    font-family: "Quicksand", sans-serif !important;
+}
 .navbar__button--dark {
     color: black !important;
     text-transform: none !important;
     margin-left: 20px !important;
     font-size: 16px !important;
     font-weight: bold !important;
+    font-family: "Quicksand", sans-serif;
 }
 
 .navbar__img {
