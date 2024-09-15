@@ -36,11 +36,11 @@ export default function NuestroEquipo() {
                 <Typography variant='h1' className="team__title--logo" align='center' gutterBottom>Nuestro Equipo</Typography>
                 <Grid2 container spacing={{ xs: 3, md: 4 }} sx={{ justifyContent: 'center' }}>
                     {[{ name: 'Sebastián Baeza', role: 'Product Owner', img: m1, linkedin: 'https://www.linkedin.com/in/sebastian-baeza-avello/' },
-                    { name: 'Valentina Cisternas', role: 'Fullstack Developer', img: m2, linkedin: 'https://www.linkedin.com/in/valentina-cisternas-ocaranza-186573303/' },
+                    { name: 'Valentina Cisternas', role: 'Encargado de Marketing', img: m2, linkedin: 'https://www.linkedin.com/in/valentina-cisternas-ocaranza-186573303/' },
                     { name: 'Alonso Herrera', role: 'Scrum Master', img: m3, linkedin: 'https://www.linkedin.com/in/alonso-herrerao/' },
-                    { name: 'Francisca González', role: 'Fullstack Developer', img: m4, linkedin: 'https://www.linkedin.com/in/francisca-gonzalez-bastias/' },
-                    { name: 'Nicolás Pizarro', role: 'Fullstack Developer', img: m5, linkedin: 'https://www.linkedin.com/in/nicolas-pizarro-talamilla-367179300/' },
-                    { name: 'Daniela Sánchez', role: 'Fullstack Developer', img: m6, linkedin: 'https://www.linkedin.com/in/daniela-s%C3%A1nchez-nizza-a00453263/' }
+                    { name: 'Francisca González', role: 'Encargado de UX', img: m4, linkedin: 'https://www.linkedin.com/in/francisca-gonzalez-bastias/' },
+                    { name: 'Nicolás Pizarro', role: 'Senior Developer', img: m5, linkedin: 'https://www.linkedin.com/in/nicolas-pizarro-talamilla-367179300/' },
+                    { name: 'Daniela Sánchez', role: 'Encargado de QA', img: m6, linkedin: 'https://www.linkedin.com/in/daniela-s%C3%A1nchez-nizza-a00453263/' }
                     ].map((member, index) => (
                         <Paper component={Grid2} key={index} container direction='column' sx={{ padding: '1vh', alignItems: 'center' }}>
                             <Avatar className='memberImg' alt={member.name} sx={{ width: '15vh', height: '15vh', marginBottom: '1vh' }} src={member.img} />
